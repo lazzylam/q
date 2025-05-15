@@ -1,16 +1,9 @@
 import asyncio
 from telethon import TelegramClient
 from config import API_ID, API_HASH, BOT_TOKEN
-from handlers import ankes, com
+from handlers import *
 
 client = TelegramClient("lamora", API_ID, API_HASH)
-
-import handlers.kokokontol
-import handlers.mielanj
-import handlers.ricklucu
-import handlers.batal
-
-from config import BOT_TOKEN
 
 async def main():
     await client.start(bot_token=BOT_TOKEN)
