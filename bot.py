@@ -1,7 +1,7 @@
 import asyncio
 from telethon import TelegramClient
 from config import API_ID, API_HASH, BOT_TOKEN
-from handlers import antigcast, commands
+from handlers import ankes, com
 
 client = TelegramClient("lamora", API_ID, API_HASH)
 
