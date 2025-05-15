@@ -6,7 +6,7 @@ from handlers import ankes, com
 client = TelegramClient("lamora", API_ID, API_HASH)
 
 async def main():
-    await client.start(BOT_TOKEN=BOT_TOKEN)
+    await client.start(bot_token=BOT_TOKEN)
     ankes.register(client)
     com.register(client)
     print("aktif!")
