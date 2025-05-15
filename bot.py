@@ -7,8 +7,7 @@ client = TelegramClient("lamora", API_ID, API_HASH)
 
 async def main():
     await client.start(bot_token=BOT_TOKEN)
-    ankes.register(client)
-    com.register(client)
+    register(client)
     print("aktif!")
     await client.run_until_disconnected()
 
