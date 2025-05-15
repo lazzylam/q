@@ -1,12 +1,12 @@
 import asyncio
 from telethon import TelegramClient
-from config import api_id, api_hash, bot_token
+from config import API_ID, API_HASH, BOT_TOKEN
 from handlers import antigcast, commands
 
-client = TelegramClient("lamora", api_id, api_hash)
+client = TelegramClient("lamora", API_ID, API_HASH)
 
 async def main():
-    await client.start(bot_token=bot_token)
+    await client.start(BOT_TOKEN=BOT_TOKEN)
     ankes.register(client)
     com.register(client)
     print("aktif!")
